@@ -15,11 +15,10 @@ namespace Kamaus_CL
         public static Bitmap ApplyFilters(Bitmap image)
         {
             // create filter
-            ColorFiltering filter = new ColorFiltering();
-            // set color ranges to keep
-            filter.Red = new IntRange(254, 255);
-            filter.Green = new IntRange(0, 255);
-            filter.Blue = new IntRange(0, 255);
+            EuclideanColorFiltering filter = new EuclideanColorFiltering();
+            // set center colol and radius
+            filter.CenterColor = new AForge.Imaging.RGB(Color.FromArgb(62, 204, 133));
+            filter.Radius = 60;
             // apply the filter
             filter.ApplyInPlace(image);
 

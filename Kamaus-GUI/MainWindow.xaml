@@ -1,8 +1,8 @@
 ﻿<Window x:Class="Kamaus_GUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Kamaus" Height="600" Width="800" Closing="Window_Closing_1">
+        Title="Kamaus" Height="500" Width="500" Closing="Window_Closing_1">
     <Grid>
-        <Image Name="pictureBox" HorizontalAlignment="Left" Height="559" VerticalAlignment="Top" Width="792"/>
+        <Image Name="pictureBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" />
     </Grid>
 </Window>

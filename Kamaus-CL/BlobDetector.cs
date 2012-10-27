@@ -14,6 +14,7 @@ namespace Kamaus_CL
     public static class BlobDetector
     {
         static AForge.Point lastPos;
+        public static bool detected = false;
 
         public static AForge.Point GetRedBlobCenter(Bitmap image)
         {
@@ -23,11 +24,18 @@ namespace Kamaus_CL
             Blob[] blobs = bCounter.GetObjectsInformation();
             if (blobs.Length > 0)
             {
-                lastPos = new AForge.Point(blobs[0].Rectangle.Left, blobs[0].Rectangle.Top);
-                return lastPos;
+                detected = true;
+                lastPos = blobs[0].CenterOfGravity;
+
+                AForge.Point rPos = new AForge.Point();
+                rPos.Y = ((lastPos.Y / 5) / 100) * 768;
+                rPos.X = ((lastPos.X / 5) / 100) * 1366;
+
+                return rPos;
             }
             else
             {
+                detected = false;
                 if (lastPos != null)
                 {
                     return lastPos;
