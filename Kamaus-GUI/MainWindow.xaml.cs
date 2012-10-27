@@ -13,7 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.Drawing;
+
 using Kamaus_CL;
+using System.IO;
+using System.Drawing.Imaging;
+using System.Threading;
 
 namespace Kamaus_GUI
 {
@@ -23,10 +28,45 @@ namespace Kamaus_GUI
     public partial class MainWindow : Window
     {
         Kamaus_CL.MouseController mc = new MouseController();
+        Kamaus_CL.WebcamController wc = new WebcamController();
 
         public MainWindow()
         {
             InitializeComponent();
+
+            wc.NewFrame += wc_NewFrame;
+            wc.Start();
+        }
+
+        void wc_NewFrame(object sender, EventArgs e)
+        {
+            AForge.Video.NewFrameEventArgs ev = (AForge.Video.NewFrameEventArgs)e;
+            Bitmap image = (Bitmap)ev.Frame.Clone();
+
+            image = Filters.ApplyFilters(image);
+
+            BitmapImage bImg = new BitmapImage();
+
+            bImg.BeginInit();
+
+            MemoryStream mStream = new MemoryStream();
+            System.Drawing.Image cFrame = image;
+            cFrame.Save(mStream, ImageFormat.Bmp);
+            mStream.Seek(0, SeekOrigin.Begin);
+
+            bImg.StreamSource = mStream;
+            bImg.EndInit();
+            bImg.Freeze();
+
+            Dispatcher.BeginInvoke(new ThreadStart(delegate
+                {
+                    pictureBox.Source = bImg;
+                }));
+        }
+
+        private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            wc.Stop();
         }
     }
 }

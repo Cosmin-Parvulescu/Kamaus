@@ -13,3 +13,13 @@ c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\K
 c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-CL.dll
 c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-CL.pdb
 c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.csprojResolveAssemblyReference.cache
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Video.DirectShow.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Video.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.xml
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Video.xml
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Video.DirectShow.xml
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Imaging.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Math.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Imaging.xml
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\AForge.Math.xml
