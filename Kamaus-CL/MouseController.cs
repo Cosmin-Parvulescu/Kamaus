@@ -56,6 +56,11 @@ namespace Kamaus_CL
             mouse_event((uint)MouseEventFlags.LEFTUP, 0, 0, 0, 0);
         }
 
+        public void MoveMouse(int x, int y)
+        {
+            mlm.MoveMouse(x, y);
+        }
+
         void mlm_MouseMove(object sender, EventArgs e)
         {
             Interfaces.MouseMoveEventArgs moveEvent = (Interfaces.MouseMoveEventArgs)e;

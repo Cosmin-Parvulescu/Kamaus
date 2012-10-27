@@ -17,11 +17,13 @@ namespace Kamaus_CL
             // create filter
             ColorFiltering filter = new ColorFiltering();
             // set color ranges to keep
-            filter.Red = new IntRange(253, 255);
+            filter.Red = new IntRange(254, 255);
             filter.Green = new IntRange(0, 255);
             filter.Blue = new IntRange(0, 255);
             // apply the filter
             filter.ApplyInPlace(image);
+
+            image.RotateFlip(RotateFlipType.RotateNoneFlipX);
 
             return image;
         }

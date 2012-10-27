@@ -45,6 +45,9 @@ namespace Kamaus_GUI
 
             image = Filters.ApplyFilters(image);
 
+            AForge.Point mousePosition = BlobDetector.GetRedBlobCenter(image);
+            mc.MoveMouse(Convert.ToInt32(mousePosition.X), Convert.ToInt32(mousePosition.Y));
+
             BitmapImage bImg = new BitmapImage();
 
             bImg.BeginInit();
