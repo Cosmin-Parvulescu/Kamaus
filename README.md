@@ -3,6 +3,8 @@ Kamaus
 
 Bucharest Hackathon Entry
 
-TEAM:
-Andrei Jifcovici \n
+TEAM: 
+
+Andrei Jifcovici 
+
 Cosmin Parvulescu
