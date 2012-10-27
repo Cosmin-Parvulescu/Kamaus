@@ -1,0 +1,5 @@
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-CL\obj\Debug\Kamaus-CL.csprojResolveAssemblyReference.cache
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-CL\bin\Debug\Kamaus-CL.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-CL\bin\Debug\Kamaus-CL.pdb
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-CL\obj\Debug\Kamaus-CL.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-CL\obj\Debug\Kamaus-CL.pdb

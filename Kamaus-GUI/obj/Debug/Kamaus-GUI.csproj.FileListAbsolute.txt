@@ -1,0 +1,15 @@
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-GUI.exe.config
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-GUI.exe
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-GUI.pdb
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\MainWindow.baml
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\MainWindow.g.cs
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\App.g.cs
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI_MarkupCompile.cache
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.g.resources
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus_GUI.Properties.Resources.resources
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.csproj.GenerateResource.Cache
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.exe
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.pdb
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-CL.dll
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\bin\Debug\Kamaus-CL.pdb
+c:\Users\Cos\documents\visual studio 2012\Projects\Kamaus\Kamaus-GUI\obj\Debug\Kamaus-GUI.csprojResolveAssemblyReference.cache

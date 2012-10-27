@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kamaus", "Kamaus\Kamaus.csproj", "{0C1308D1-35D0-4827-8186-B494ED32535B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kamaus-CL", "Kamaus-CL\Kamaus-CL.csproj", "{6389A8E1-BA3F-4324-944A-825607131EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kamaus-GUI", "Kamaus-GUI\Kamaus-GUI.csproj", "{F11BCC93-7320-47AF-8CDD-6308352F88A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C1308D1-35D0-4827-8186-B494ED32535B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C1308D1-35D0-4827-8186-B494ED32535B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C1308D1-35D0-4827-8186-B494ED32535B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C1308D1-35D0-4827-8186-B494ED32535B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6389A8E1-BA3F-4324-944A-825607131EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6389A8E1-BA3F-4324-944A-825607131EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6389A8E1-BA3F-4324-944A-825607131EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6389A8E1-BA3F-4324-944A-825607131EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11BCC93-7320-47AF-8CDD-6308352F88A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11BCC93-7320-47AF-8CDD-6308352F88A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11BCC93-7320-47AF-8CDD-6308352F88A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11BCC93-7320-47AF-8CDD-6308352F88A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C1308D1-35D0-4827-8186-B494ED32535B}</ProjectGuid>
+    <ProjectGuid>{F11BCC93-7320-47AF-8CDD-6308352F88A8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kamaus</RootNamespace>
-    <AssemblyName>Kamaus</AssemblyName>
+    <RootNamespace>Kamaus_GUI</RootNamespace>
+    <AssemblyName>Kamaus-GUI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
