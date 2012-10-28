@@ -30,6 +30,8 @@ namespace Kamaus_GUI
         Kamaus_CL.MouseController mc = new MouseController();
         Kamaus_CL.WebcamController wc = new WebcamController();
 
+        Bitmap temp;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -45,13 +47,17 @@ namespace Kamaus_GUI
 
             image = Filters.ApplyFilters(image);
 
-            AForge.Point mousePosition = BlobDetector.GetRedBlobCenter(image);
-            if (BlobDetector.detected)
+            if (Filters.cSet)
             {
-                mc.MoveMouse(Convert.ToInt32(mousePosition.X), Convert.ToInt32(mousePosition.Y));
+                AForge.Point mousePosition = BlobDetector.GetRedBlobCenter(image);
+                if (BlobDetector.detected)
+                {
+                    mc.MoveMouse(Convert.ToInt32(mousePosition.X), Convert.ToInt32(mousePosition.Y));
+                }
             }
 
             BitmapImage bImg = new BitmapImage();
+            temp = image;
 
             bImg.BeginInit();
 
@@ -73,6 +79,13 @@ namespace Kamaus_GUI
         private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
             wc.Stop();
+        }
+
+        private void Window_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
+        {
+            System.Drawing.Color color = temp.GetPixel(Convert.ToInt32(e.GetPosition(pictureBox).X), Convert.ToInt32(e.GetPosition(pictureBox).Y));
+            Filters.oColor = color;
+            Filters.cSet = true;
         }
     }
 }

@@ -12,15 +12,21 @@ namespace Kamaus_CL
 {
     public static class Filters
     {
+        public static Color oColor;
+        public static bool cSet = false;
+
         public static Bitmap ApplyFilters(Bitmap image)
         {
-            // create filter
-            EuclideanColorFiltering filter = new EuclideanColorFiltering();
-            // set center colol and radius
-            filter.CenterColor = new AForge.Imaging.RGB(Color.FromArgb(62, 204, 133));
-            filter.Radius = 60;
-            // apply the filter
-            filter.ApplyInPlace(image);
+            if (cSet)
+            {
+                // create filter
+                EuclideanColorFiltering filter = new EuclideanColorFiltering();
+                // set center colol and radius
+                filter.CenterColor = new AForge.Imaging.RGB(oColor);
+                filter.Radius = 40;
+                // apply the filter
+                filter.ApplyInPlace(image);
+            }
 
             image.RotateFlip(RotateFlipType.RotateNoneFlipX);
 
