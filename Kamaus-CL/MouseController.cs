@@ -50,6 +50,11 @@ namespace Kamaus_CL
             mouse_event((uint)MouseEventFlags.RIGHTUP, 0, 0, 0, 0);
         }
 
+        public void ClickMouse()
+        {
+            mlm.LeftClickMouse();
+        }
+
         void mlm_MouseLeftClick(object sender, EventArgs e)
         {
             mouse_event((uint)MouseEventFlags.LEFTDOWN, 0, 0, 0, 0);

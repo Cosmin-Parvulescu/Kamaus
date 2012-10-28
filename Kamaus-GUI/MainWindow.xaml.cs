@@ -83,9 +83,12 @@ namespace Kamaus_GUI
 
         private void Window_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
         {
-            System.Drawing.Color color = temp.GetPixel(Convert.ToInt32(e.GetPosition(pictureBox).X), Convert.ToInt32(e.GetPosition(pictureBox).Y));
-            Filters.oColor = color;
-            Filters.cSet = true;
+            if (!Filters.cSet)
+            {
+                System.Drawing.Color color = temp.GetPixel(Convert.ToInt32(e.GetPosition(pictureBox).X), Convert.ToInt32(e.GetPosition(pictureBox).Y));
+                Filters.oColor = color;
+                Filters.cSet = true;
+            }
         }
     }
 }

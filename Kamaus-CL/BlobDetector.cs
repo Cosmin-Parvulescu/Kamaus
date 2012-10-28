@@ -22,8 +22,17 @@ namespace Kamaus_CL
             bCounter.ProcessImage(image);
 
             Blob[] blobs = bCounter.GetObjectsInformation();
+            Rectangle[] rects = bCounter.GetObjectsRectangles();
+
+            Pen pen = new Pen(Color.Red, 2);
+            Brush brush = new SolidBrush(Color.Red);
+            Graphics g = Graphics.FromImage(image);
+
+            if (rects.Length > 0) { g.FillRectangle(brush, rects[0]); }
+
             if (blobs.Length > 0)
             {
+
                 detected = true;
                 lastPos = blobs[0].CenterOfGravity;
 
